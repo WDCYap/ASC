@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wwdyP</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/yorha.css" rel="stylesheet">
+    <script src="scripts/bootstrap.bundle.js"></script>    
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $("#profile").load("profile.htm");
+        $("#gallery").load("gallery.htm");
+        $("#contact").load("contact.htm");
+        $("#libraries").load("libraries.htm");
+      });
+    </script>
+</head>
+<body>
+
+      
+      <div class="tab-content" id="startTabContent">
+
+        <div class="tab-pane fade show active" id="start" role="tabpanel" aria-labelledby="start-tab">
+            <ul class="nav nav-tabs" id="startTab" role="tablist" style="border: 0;">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link position-absolute top-50 start-50 translate-middle" id="main-tab" data-bs-toggle="tab" data-bs-target="#main" type="button" role="tab" aria-controls="main" aria-selected="false" style="font-size: 3rem; text-align: center; width: auto;">▲ ▼ ▲</button>
+                  </li>
+            </ul>  
+        </div>
+
+        <div class="tab-pane fade mt-2" id="main" role="tabpanel" aria-labelledby="main-tab">
+            <ul class="nav nav-tabs" id="mainTab" role="tablist">
+                <blockquote style="margin-left: 48px;">⠀</blockquote>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">◼ PROFILE</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery" type="button" role="tab" aria-controls="gallery" aria-selected="false">◼ GALLERY</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">◼ CONTACT</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="libraries-tab" data-bs-toggle="tab" data-bs-target="#libraries" type="button" role="tab" aria-controls="libraries" aria-selected="false">◼ LIBRARIES</button>
+                </li>
+              </ul>
+
+              <figure class="fixed-bottom" style="margin-bottom: 5rem; margin-left: 1.5rem; margin-right: 1.5rem;padding-top: 0px;padding-bottom: 0px; box-shadow: 2px 2px #746f5e;">
+                <blockquote class="bq-color-change" style="margin-left: 1rem;margin-top: 0px;margin-bottom: 0px;">
+                    <p style="margin-bottom: 0rem;padding-top:0.5rem;padding-bottom:0.5rem">Welcome to wwdyP. <span style="float:right;margin-bottom: 0rem;padding-top: 8px;">◼</span></p>
+                </blockquote>
+              </figure>
+            <footer class="fixed-bottom" style="border-top: 1px solid #454138; padding-top: 2rem;">⠀</footer>
+        </div>
+      </div>
+        
+    <div class="tab-content" id="mainTabContent">
+
+        <div class="tab-pane fade m-lg-5" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        </div>  
+
+        <div class="tab-pane fade m-lg-5" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+        </div>
+
+        <div class="tab-pane fade m-lg-5" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        </div>
+
+        <div class="tab-pane fade m-lg-5" id="libraries" role="tabpanel" aria-labelledby="libraries-tab">
+        </div>
+
+      </div>
+
+</body>
+</html>
